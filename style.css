@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Montserrat !important;
+}
+
+body {
+  padding: 60px 0px;
+  color: #0d6db7;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input,
+select {
+  border-color: #8dc63f !important;
+  box-shadow: none !important;
+  padding: 15px !important;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d6db7 !important;
+}
+
+button {
+  background-color: #0d6db7;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  margin-top: 15px;
+}
+
+#loader {
+  height: 30px;
+  aspect-ratio: 6;
+  --c: #0000 64%, #000 66% 98%, #0000 101%;
+  background: radial-gradient(35% 146% at 50% 159%, var(--c)) 0 0,
+    radial-gradient(35% 146% at 50% -59%, var(--c)) 25% 100%;
+  background-size: calc(100% / 3) 50%;
+  background-repeat: repeat-x;
+  animation: l1 1s infinite linear;
+}
+
+@keyframes l1 {
+  to {
+    background-position: 50% 0, 75% 100%;
+  }
+}
